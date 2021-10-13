@@ -1,5 +1,5 @@
 import { Stack } from "@chakra-ui/layout";
-import Reply from "./components/Reply";
+import Reply from "./stories/Reply";
 
 
 function App() {
