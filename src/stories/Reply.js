@@ -4,7 +4,6 @@ import { InputGroup, InputRightElement } from '@chakra-ui/input';
 import { Avatar, Button  } from "@chakra-ui/react"
 import { Component, useRef } from 'react';
 
-
 class ReplyComponent extends Component {
     
 
