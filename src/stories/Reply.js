@@ -44,13 +44,18 @@ import { Component } from 'react';
         this.setState({inputValue})
         this.setState({isSendActive: true})
     }
+    
+    handleSendMsg = () =>{
+        this.setState({showEmojis: false})
+    }
+
 
     render () {
        return (
         <Flex>
-            <Stack px='8' pt='8'>
+            <Stack>
                 <WrapItem>
-                <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" w='32px' h='32px' top='50px' ml='6'/>
+                    <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" w='32px' h='32px' top='50px' ml='6'/>
                 </WrapItem>
                     <InputGroup>  
                         <Input placeholder="Reply" w='640px' h='40px' top='8px' left='64px' radius='4px' pr='127.5px' border='1px' variant='outline' borderColor='#D4DFE3'
@@ -75,6 +80,7 @@ import { Component } from 'react';
                                         color="#0E5E81"  
                                         variant='unstlyed' 
                                         icon={<Icon icon="ri:send-plane-2-fill" />}
+                                        onClick={this.handleSendMsg}
                                     />
                             </InputRightElement>
                     </InputGroup>
